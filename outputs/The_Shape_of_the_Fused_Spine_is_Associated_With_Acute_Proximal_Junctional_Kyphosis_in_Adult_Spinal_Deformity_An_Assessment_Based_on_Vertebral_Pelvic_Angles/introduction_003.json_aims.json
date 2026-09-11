@@ -1,0 +1,16 @@
+{
+  "aims": [
+    {
+      "id": "A1",
+      "parent": "null",
+      "type": "primary",
+      "statement": "This study aims to investigate the shape of the fused spine in the setting of a commonly utilized 'T10-pelvis' fusion, using a more detailed and comprehensive approach, and then to explore its potential association with proximal junctional kyphosis."
+    },
+    {
+      "id": "A2",
+      "parent": "A1",
+      "type": "secondary",
+      "statement": "We hypothesize that certain shapes of the fused spine will correlate more closely with the development of PJK and that by measuring VPAs, we will be able to predict this post-operative spine contour and, therefore, the occurrence of PJK."
+    }
+  ]
+}

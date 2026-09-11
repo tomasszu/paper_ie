@@ -1,0 +1,10 @@
+{
+  "aims": [
+    {
+      "id": "A1",
+      "parent": "<aim id | null>",
+      "type": "<primary | secondary | exploratory>",
+      "statement": "<verbatim aim/hypothesis from text>"
+    }
+  ]
+}
