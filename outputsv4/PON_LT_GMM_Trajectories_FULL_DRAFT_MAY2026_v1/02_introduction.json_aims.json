@@ -1,0 +1,26 @@
+{
+  "aims": [
+    {
+      "id": "A1",
+      "parent": "null",
+      "type": "primary",
+      "statement": "Distinct trajectory phenotypes would be identifiable even within a mechanically uncomplicated cohort."
+    },
+    {
+      "id": "A2",
+      "parent": "A1",
+      "type": "secondary",
+      "statement": "Heterogeneous early postoperative alignment patterns would demonstrate radiographic convergence over time (“funneling”)."
+    },
+    {
+      "id": "A3",
+      "parent": "A1",
+      "type": "exploratory",
+      "statement": "Patient-reported outcomes exhibited trajectory-linked recovery patterns alongside radiographic adaptation."
+    }
+  ],
+  "background": {
+    "context": "Adult spinal deformity (ASD) is characterized by sagittal malalignment and compensatory mechanisms, such as pelvic retroversion, to maintain upright posture. Contemporary ASD reconstruction aims to restore sagittal alignment using regional and global radiographic goals. However, postoperative alignment and pelvic compensation are dynamic processes, and the convergence of heterogeneous early trajectories toward shared alignment corridors remains poorly characterized.",
+    "gap": "Many studies and postoperative assessments remain anchored to single timepoint, binary definitions of success, potentially obscuring the dynamic nature of postoperative adaptation. There is a need for analytic methods that explicitly model longitudinal trajectories to characterize postoperative adaptation as a process rather than an endpoint."
+  }
+}

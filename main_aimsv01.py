@@ -21,12 +21,12 @@ os.environ["LANGSMITH_API_KEY"] = creds.LANGSMITH_API_KEY
 os.environ["LANGSMITH_PROJECT"] = creds.LANGSMITH_PROJECT
 
 # <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Lopading in the PDF file, parsing into markdown then to JSON and cleaning the JSON up >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
-pdf_name = "The_Shape_of_the_Fused_Spine_is_Associated_With_Acute_Proximal_Junctional_Kyphosis_in_Adult_Spinal_Deformity_An_Assessment_Based_on_Vertebral_Pelvic_Angles"
+#pdf_name = "The_Shape_of_the_Fused_Spine_is_Associated_With_Acute_Proximal_Junctional_Kyphosis_in_Adult_Spinal_Deformity_An_Assessment_Based_on_Vertebral_Pelvic_Angles"
 #pdf_name = "pelvic_nonresponse_following_treatment_of_adult.7"
 #pdf_name = "Lower_Limb_Khalife"
 #pdf_name = "optimizing_the_definition_of_proximal_junctional.7"
 #pdf_name = "posterior_ligamentous_augmentation_is_associated.9"
-#pdf_name = "Post_Discharge_Lorenzen"\
+pdf_name = "Post_Discharge_Lorenzen"
 #pdf_name = "PON_LT_GMM_Trajectories_FULL_DRAFT_MAY2026_v1"
 
 input_chunks_dir = fr"C:\Users\lenox\OneDrive\Documents\tom\projects\pdf_parser\output\{pdf_name}\chunks"

@@ -1,0 +1,12 @@
+{
+  "questions": [
+    {
+      "id": "Q1",
+      "question_root": "<concept-level question, NO test named>",
+      "question_type": "<descriptive | comparative | associative | predictive | trajectory | classification>",
+      "serves_aim": "<aim id | null (null => candidate orphan_question)>",
+      "applies_filter": "<filter named | null (null = base cohort)>",
+      "groups_by": "<grouping named | null (null = not a grouped comparison, or grouping is the outcome)>"
+    }
+  ]
+}

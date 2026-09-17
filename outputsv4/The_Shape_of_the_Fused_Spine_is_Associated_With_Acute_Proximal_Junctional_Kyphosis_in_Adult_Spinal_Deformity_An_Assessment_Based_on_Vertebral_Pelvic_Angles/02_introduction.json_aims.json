@@ -1,0 +1,20 @@
+{
+  "aims": [
+    {
+      "id": "A1",
+      "parent": "null",
+      "type": "primary",
+      "statement": "We hypothesize that certain shapes of the fused spine will correlate more closely with the development of PJK"
+    },
+    {
+      "id": "A2",
+      "parent": "A1",
+      "type": "secondary",
+      "statement": "and that by measuring VPAs, we will be able to predict this post-operative spine contour and, therefore, the occurrence of PJK."
+    }
+  ],
+  "background": {
+    "context": "The study focuses on the association between the shape of the fused spine and the occurrence of proximal junctional kyphosis (PJK) in adult spinal deformity (ASD) patients. It highlights the limitations of the Cobb angle method in capturing the relative spatial position of each vertebra and introduces vertebral pelvic angles (VPAs) as a more comprehensive approach.",
+    "gap": "Recent literature supports a probable multifactorial etiology for PJK, with re-alignment components appearing to play a critical role. However, the literature remains unsettled with regard to specific associations between alignment and the occurrence of PJK."
+  }
+}

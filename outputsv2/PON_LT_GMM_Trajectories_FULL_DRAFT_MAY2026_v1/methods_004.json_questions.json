@@ -1,0 +1,28 @@
+{
+  "questions": [
+    {
+      "id": "Q1",
+      "question_root": "Do distinct trajectory phenotypes exist within a mechanically uncomplicated cohort?",
+      "question_type": "classification",
+      "serves_aim": "A1",
+      "applies_filter": null,
+      "groups_by": null
+    },
+    {
+      "id": "Q2",
+      "question_root": "Do heterogeneous early postoperative alignment patterns demonstrate radiographic convergence over time?",
+      "question_type": "trajectory",
+      "serves_aim": "A2",
+      "applies_filter": null,
+      "groups_by": null
+    },
+    {
+      "id": "Q3",
+      "question_root": "Is there a variance reduction over time in the postoperative alignment parameters?",
+      "question_type": "associative",
+      "serves_aim": "A2",
+      "applies_filter": null,
+      "groups_by": null
+    }
+  ]
+}

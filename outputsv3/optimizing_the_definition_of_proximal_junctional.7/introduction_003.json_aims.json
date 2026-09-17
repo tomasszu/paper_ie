@@ -1,0 +1,22 @@
+{
+  "aims": [
+    {
+      "id": "A1",
+      "parent": "null",
+      "type": "primary",
+      "statement": "To perform a sensitivity analysis demonstrating the test performance metrics for any combination of PJA magnitude and change"
+    },
+    {
+      "id": "A2",
+      "parent": "null",
+      "type": "primary",
+      "statement": "to propose novel PJK criteria based on the combination with the best performance metrics"
+    },
+    {
+      "id": "A3",
+      "parent": "A2",
+      "type": "secondary",
+      "statement": "to compare the test performance characteristics of this novel criteria with historical criteria (specifically, those of Glattes et al and Bridwell et al)"
+    }
+  ]
+}

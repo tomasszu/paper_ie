@@ -1,0 +1,28 @@
+{
+  "questions": [
+    {
+      "id": "Q1",
+      "question_root": "What distinct trajectory phenotypes can be identified within a mechanically uncomplicated cohort of adult spinal deformity patients?",
+      "question_type": "trajectory",
+      "serves_aim": "A1",
+      "applies_filter": null,
+      "groups_by": null
+    },
+    {
+      "id": "Q2",
+      "question_root": "Do heterogeneous early postoperative alignment patterns demonstrate radiographic convergence over time in adult spinal deformity patients?",
+      "question_type": "trajectory",
+      "serves_aim": "A2",
+      "applies_filter": null,
+      "groups_by": null
+    },
+    {
+      "id": "Q3",
+      "question_root": "Do patient-reported outcomes exhibit trajectory-linked recovery patterns alongside radiographic adaptation in adult spinal deformity patients?",
+      "question_type": "associative",
+      "serves_aim": "A3",
+      "applies_filter": null,
+      "groups_by": null
+    }
+  ]
+}

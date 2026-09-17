@@ -1,0 +1,16 @@
+{
+  "aims": [
+    {
+      "id": "A1",
+      "parent": null,
+      "type": "primary",
+      "statement": "We sought to assess PNR, postoperative CD, and PJK following ASD corrective surgery in a large cohort of patients treated for spinal deformity."
+    },
+    {
+      "id": "A2",
+      "parent": "A1",
+      "type": "secondary",
+      "statement": "We hypothesized that undercorrection as defined in any specific utility would result in an increased likelihood of PNR, while overcorrection would lead to a higher risk of mechanical complications."
+    }
+  ]
+}

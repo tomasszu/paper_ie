@@ -1,8 +1,8 @@
-Extract information from the following excerpt from a study:
+Extract information from the following chapter from a study:
 
 {chapter_json}
 
-Use the following JSON response format to list the study aims IF there are any, oterwise return None.
+Use the following JSON response format to list the study aims IF there are any, oterwise return None and the background available on the study.
 
 {queried_fields_json}
 

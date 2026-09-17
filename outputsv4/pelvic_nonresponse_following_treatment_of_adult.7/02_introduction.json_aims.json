@@ -1,0 +1,20 @@
+{
+  "aims": [
+    {
+      "id": "A1",
+      "parent": "null",
+      "type": "primary",
+      "statement": "undercorrection as defined in any specific utility would result in an increased likelihood of PNR"
+    },
+    {
+      "id": "A2",
+      "parent": "null",
+      "type": "primary",
+      "statement": "overcorrection would lead to a higher risk of mechanical complications"
+    }
+  ],
+  "background": {
+    "context": "Adult spinal deformity (ASD) is often associated with pelvic malalignment, leading to compensatory measures in the lower extremities and poor quality of life. Postoperative correction of pelvic malalignment is a goal in ASD management, but patients may fail to compensate postoperatively, termed pelvic nonresponders (PNR). Efforts to correct pelvic malalignment can lead to other mechanical complications such as construct failure, proximal junctional kyphosis (PJK), and cervical deformity (CD).",
+    "gap": "The ability of each of these paradigms to inform the balance between appropriate pelvic correction and the risk of other postoperative mechanical complications has yet to be effectively studied."
+  }
+}

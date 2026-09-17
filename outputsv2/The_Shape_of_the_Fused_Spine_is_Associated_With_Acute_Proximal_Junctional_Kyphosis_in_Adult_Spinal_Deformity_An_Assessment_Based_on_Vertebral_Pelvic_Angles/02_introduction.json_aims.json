@@ -1,0 +1,20 @@
+{
+  "aims": [
+    {
+      "id": "A1",
+      "parent": null,
+      "type": "primary",
+      "statement": "This study aims to investigate the shape of the fused spine in the setting of a commonly utilized 'T10-pelvis' fusion, using a more detailed and comprehensive approach, and then to explore its potential association with proximal junctional kyphosis."
+    },
+    {
+      "id": "A2",
+      "parent": "A1",
+      "type": "secondary",
+      "statement": "We hypothesize that certain shapes of the fused spine will correlate more closely with the development of PJK and that by measuring VPAs, we will be able to predict this post-operative spine contour and, therefore, the occurrence of PJK."
+    }
+  ],
+  "background": {
+    "context": "The study focuses on the clinical relevance of spinal alignment in the sagittal plane, particularly in the context of adult spinal deformity (ASD) surgery. It highlights the limitations of the SRS-Schwab classification in addressing mechanical complications such as proximal junctional kyphosis (PJK). The study aims to address the gap in understanding the specific associations between spinal alignment and the occurrence of PJK, proposing that vertebral pelvic angles (VPAs) may provide a more accurate depiction of the spine's shape and its impact on PJK.",
+    "gap": "Recent literature supports a probable multifactorial etiology for PJK, with re-alignment components appearing to play a critical role. However, the literature remains unsettled with regard to specific associations between alignment and the occurrence of PJK. Some studies have reported an association with a lower post-operative PI-LL mismatch, while others found no difference in post-operative PI-LL mismatch between patients with and without PJK."
+  }
+}

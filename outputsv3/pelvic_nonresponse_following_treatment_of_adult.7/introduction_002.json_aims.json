@@ -1,0 +1,16 @@
+{
+  "aims": [
+    {
+      "id": "A1",
+      "parent": "null",
+      "type": "primary",
+      "statement": "undercorrection as defined in any specific utility would result in an increased likelihood of PNR"
+    },
+    {
+      "id": "A2",
+      "parent": "null",
+      "type": "primary",
+      "statement": "overcorrection would lead to a higher risk of mechanical complications"
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "questions": [
+    {
+      "id": "Q1",
+      "question_root": "What is the relationship between construct geometry and pelvic orientation in ASD patients?",
+      "question_type": "associative",
+      "serves_aim": "A1",
+      "applies_filter": null,
+      "groups_by": null
+    },
+    {
+      "id": "Q2",
+      "question_root": "Does residual L4PA explain intra-class PT variability in the large-correction phenotype?",
+      "question_type": "associative",
+      "serves_aim": "A1",
+      "applies_filter": null,
+      "groups_by": "Class 3"
+    }
+  ]
+}

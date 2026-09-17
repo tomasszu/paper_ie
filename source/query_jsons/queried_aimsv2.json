@@ -1,0 +1,14 @@
+{
+  "aims": [
+    {
+      "id": "A1",
+      "parent": "<aim id | null>",
+      "type": "<primary | secondary | exploratory>",
+      "statement": "<verbatim aim/hypothesis from text>"
+    }
+  ],
+  "background": {
+    "context": "<Contextual data passed on to other LLMs to be able to resme without having access to the paper, without transcribing the research question. Write this like an answer on Google>",
+    "gap": "<verbatim gap in literature>"
+  }
+}

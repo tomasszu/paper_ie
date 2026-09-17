@@ -1,0 +1,22 @@
+{
+  "aims": [
+    {
+      "id": "A1",
+      "parent": "null",
+      "type": "primary",
+      "statement": "distinct trajectory phenotypes would be identifiable even within a mechanically uncomplicated cohort"
+    },
+    {
+      "id": "A2",
+      "parent": "A1",
+      "type": "secondary",
+      "statement": "heterogeneous early postoperative alignment patterns would demonstrate radiographic convergence over time (“funneling”)"
+    },
+    {
+      "id": "A3",
+      "parent": "A1",
+      "type": "exploratory",
+      "statement": "patient-reported outcomes exhibited trajectory-linked recovery patterns alongside radiographic adaptation"
+    }
+  ]
+}

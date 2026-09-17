@@ -1,0 +1,16 @@
+{
+  "aims": [
+    {
+      "id": "A1",
+      "parent": "null",
+      "type": "primary",
+      "statement": "to identify different patterns of lower limb compensation"
+    },
+    {
+      "id": "A2",
+      "parent": "A1",
+      "type": "secondary",
+      "statement": "to determine which parameters may affect the recruitment of knee flexion versus hip extension"
+    }
+  ]
+}
