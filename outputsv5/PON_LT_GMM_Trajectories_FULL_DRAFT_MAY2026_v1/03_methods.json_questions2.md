@@ -1,27 +1,38 @@
-Based on the methodology described, the questions the analysis is trying to answer are as follows:
+- **Growth Mixture Model (GMM)**
+  - COHORT: Identify distinct trajectory classes based on key sagittal spinopelvic parameters to understand different patient subgroups.
 
-1. **Variance Convergence (Funneling Effect):**
-   - What is the change in variance of key sagittal spinopelvic parameters from preoperative to 2-year follow-up in the overall population?
-   - Are there differences in the variance of these parameters across the four identified classes at preoperative and 2-year follow-up?
+- **Shapiro-Wilk test**
+  - COHORT: Assess the normality of continuous variables to determine the appropriate statistical methods for between-class comparisons.
 
-2. **Patient-Reported Outcomes (PROs):**
-   - How do patient-reported outcomes (ODI, SF-36 PCS/MCS, SRS-22 total, NRS back and leg pain) change over time (baseline, 1 year, and 2 years)?
-   - What percentage of patients achieve minimal clinically important difference (MCID) thresholds for these outcomes?
+- **ANOVA**
+  - BETWEEN-CLASS: Determine if there are significant differences in continuous variables with normal distribution across the four trajectory classes.
 
-3. **Predictor Analysis:**
-   - Which baseline and surgical predictors are associated with membership in different classes identified by the Growth Mixture Model?
-   - How does the addition of a potentially modifiable surgical variable (6-week PI-LL) affect the predictor analysis?
+- **Kruskal-Wallis test**
+  - BETWEEN-CLASS: Determine if there are significant differences in continuous variables without normal distribution across the four trajectory classes.
 
-4. **Construct Geometry–Pelvic Orientation Analysis:**
-   - What is the relationship between construct geometry (PI-LL, UIV_PA, L4PA) and pelvic orientation (PT) at 6-week and 2-year follow-up?
-   - Does residual L4PA explain intra-class PT variability in the large-correction phenotype (Class 3)?
+- **Wilcoxon rank-sum test**
+  - BETWEEN-CLASS: Determine if there are significant differences in continuous variables between classes, particularly after normality checks.
 
-5. **Between-Class Comparisons:**
-   - Are there significant differences in radiographic parameters and patient-reported outcomes between the four classes identified by the Growth Mixture Model?
-   - What are the effect sizes of these differences?
+- **Fisher exact test**
+  - BETWEEN-CLASS: Determine if there are significant differences in categorical variables between the classes.
 
-6. **Within-Class Paired Comparisons:**
-   - How do radiographic parameters change from preoperative to 6-week and 2-year follow-up within each class?
-   - What are the medians of paired differences for these parameters within each class?
+- **Wilcoxon signed-rank test**
+  - WITHIN-CLASS: Assess if there are meaningful changes in sagittal alignment parameters within each trajectory class from preoperative to postoperative timepoints.
 
-These questions aim to understand the variability and changes in radiographic and patient-reported outcomes over time and across different classes identified by the Growth Mixture Model. They also seek to identify predictors and relationships that might influence class membership and outcomes.
+- **F-test (two-sample variance test)**
+  - COHORT: Determine if there are significant differences in the variances of key sagittal spinopelvic parameters across the full cohort.
+
+- **Levene's test**
+  - COHORT: Determine if there are significant differences in the variances of key sagittal spinopelvic parameters across the full cohort.
+
+- **Likelihood ratio test (LRT)**
+  - COHORT: Determine the significance of candidate predictors in a multinomial logistic model to refine the model for class prediction.
+
+- **Spearman correlation matrix**
+  - COHORT: Assess the strength and direction of relationships between candidate predictors to inform model selection.
+
+- **Pearson correlation**
+  - COHORT: Determine the strength and direction of relationships between PT, PI-LL, UIV_PA, L4PA, and a composite parameter to understand their interdependencies.
+
+- **Bayesian Information Criterion (BIC)**
+  - COHORT: Compare and select the best statistical model based on model fit and complexity.

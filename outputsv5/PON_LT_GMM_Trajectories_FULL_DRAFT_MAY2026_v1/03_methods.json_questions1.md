@@ -1,11 +1,11 @@
 1. **Population being studied:**
-   - The population being studied consists of patients who underwent posterior spinal fusion with specific inclusion and exclusion criteria. The final cohort includes 335 patients.
+   - The population being studied is a cohort of patients who underwent posterior spinal fusion with specific inclusion and exclusion criteria. The final cohort consists of 335 patients.
 
-2. **Groupings mentioned:**
-   - The methods section describes the use of a Growth Mixture Model (GMM) to identify four distinct classes (subgroups) of patients based on their sagittal alignment trajectories. These classes are referred to as the 4-Class Solution.
+2. **Groupings:**
+   - The methods mention the use of a multivariate growth mixture model (GMM) to identify subgroups within the population. The optimal class number selected was 4, based on the Bayesian Information Criterion (BIC) and clinical interpretability. Each class represents a distinct trajectory pattern of sagittal alignment over time.
 
 3. **Parameters being analyzed:**
-   - **Key sagittal spinopelvic parameters:**
+   - **Radiographic Parameters:**
      - Pelvic incidence (PI)
      - Pelvic tilt (PT)
      - PI minus lumbar lordosis (PI-LL)
@@ -14,30 +14,31 @@
      - T10-L2 kyphosis
      - Sagittal vertical axis (SVA C7-S1)
      - T1 pelvic angle (T1PA)
-   - **Other parameters:**
      - UIV pelvic angle (UIV_PA)
      - T1PA-UIV_PA gap
      - L4 pelvic angle (L4PA)
      - L1 pelvic angle (L1PA)
      - Proximal junctional angle (PJK angle and PJK delta)
-     - Coronal parameters: lumbar Cobb and thoracic Cobb angles
-     - Surgical variables: UIV level, LIV level, number of levels fused, 3-column osteotomy (3CO), interbody fusion type (ALIF, PLIF/TLIF, XLIF), operative time, estimated blood loss (EBL)
-   - **GMM parameters (selected for joint modeling):**
-     - PT
-     - UIV_PA
-     - PI-LL
-     - L4PA
+     - Lumbar Cobb and thoracic Cobb angles
+   - **Surgical Variables:**
+     - UIV level
+     - LIV level
+     - Number of levels fused
+     - 3-column osteotomy (3CO)
+     - Interbody fusion type (ALIF, PLIF/TLIF, XLIF)
+     - Operative time
+     - Estimated blood loss (EBL)
 
-4. **Comparisons and analyses run:**
-   - **Overall population:**
-     - **Variance convergence (funneling effect):** F-test and Levene's test were used to evaluate the overall cohort SD change from pre-op to 2Y, and equality of variance across the 4 classes at pre-op and 2Y separately.
-     - **Patient-reported outcomes (PROs):** Raw scores were reported at baseline, 1 year, and 2 years for ODI, SF-36 PCS/MCS, SRS-22 total, NRS back and leg pain. Change scores were computed, and MCID achievement was reported.
-     - **Predictor analysis:** Univariable screen using likelihood ratio test (LRT) for each candidate predictor in a multinomial logistic model. Stepwise AIC selection was applied for baseline predictors (Model A) and baseline + 6-week PI-LL predictors (Model B).
-     - **Construct geometry–pelvic orientation analysis:** Pearson correlations were computed between 2-year and 6-week PT and each of three geometric parameters (PI-LL, UIV_PA, L4PA) and a composite parameter.
-   - **Group (class) specific analyses:**
-     - **Between-class comparisons:** Continuous variables were compared using ANOVA or Kruskal-Wallis tests, and effect sizes were computed. Categorical variables were compared using Fisher exact test.
-     - **Within-class paired comparisons:** Wilcoxon signed-rank test was used to compare preoperative, 6-week, and 2-year data within each class.
-     - **Post-hoc pairwise comparisons:** Wilcoxon rank-sum test was used for unadjusted and Bonferroni-corrected comparisons.
-     - **Compact letter display (CLD):** Graph-based algorithm for 4 classes; letters assigned using Bonferroni-adjusted pairwise p-values.
-
-These analyses provide a comprehensive evaluation of the sagittal alignment trajectories and associated parameters in the studied population, with specific focus on the four distinct classes identified by the GMM.
+4. **Comparisons and Analyses:**
+   - **Overall Population:**
+     - Variance convergence (funneling effect) analysis was conducted on PT, PI-LL, SVA, T1PA, UIV_PA, LL L1-S1.
+     - Within-class paired comparisons were performed for PT, PI-LL, SVA, T1PA, UIV_PA, LL L1-S1, LL L4-S1, T10-L2, TK T2-T12.
+     - Patient-reported outcomes (PROs) were analyzed for ODI, SF-36 PCS/MCS, SRS-22 total, NRS back and leg pain.
+     - Predictor analysis was conducted using multinomial logistic models to identify baseline predictors and 6-week PI-LL as potential modifiable surgical variables.
+     - Construct geometry–pelvic orientation analysis was performed using Pearson correlations between PT and geometric parameters (PI-LL, UIV_PA, L4PA) and a composite parameter at matched timepoints.
+   - **On the Groups Separately:**
+     - Between-class comparisons were performed using ANOVA and Kruskal-Wallis tests for continuous variables, and Fisher exact test for categorical variables.
+     - Post-hoc pairwise comparisons were conducted using Wilcoxon rank-sum tests with Bonferroni correction.
+     - Within-class paired comparisons were performed for PT, PI-LL, SVA, T1PA, UIV_PA, LL L1-S1, LL L4-S1, T10-L2, TK T2-T12.
+     - Variance convergence analysis was conducted separately for each class.
+     - Construct geometry–pelvic orientation analysis was performed within Class 3 to assess the relationship between L4PA and PT.

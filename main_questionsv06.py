@@ -13,6 +13,9 @@ from typing import Any
 from langchain.chat_models import init_chat_model
 from langchain_core.messages import HumanMessage, SystemMessage
 
+from langchain_openai import ChatOpenAI  
+
+
 
 # Set LangSmith environment variables BEFORE importing LangChain modules  
 os.environ["LANGSMITH_TRACING"] = "true"
@@ -31,7 +34,7 @@ pdf_name = "PON_LT_GMM_Trajectories_FULL_DRAFT_MAY2026_v1"
 
 input_chunks_dir = fr"C:\Users\lenox\OneDrive\Documents\tom\projects\pdf_parser\output\{pdf_name}\chapters"
 # Output folder for answer json
-output_folder = fr"C:\Users\lenox\tomass\projects\paper_ie\outputsv5\{pdf_name}"
+output_folder = fr"C:\Users\lenox\tomass\projects\paper_ie\outputsv6\{pdf_name}"
 
 # Helper function to read .md files  
 def load_template(filepath):  
@@ -100,11 +103,12 @@ def render_simple(obj: dict) -> str:
 
 def main():
 
-    model = init_chat_model(
-        "llama3.3:latest",
-        model_provider="ollama",
-        temperature=0.0,
-        timeout=1200,
+    model = ChatOpenAI(  
+        model="openai/gpt-oss-20b",
+        base_url="http://localhost:1234/v1",
+        api_key="lm-studio",  # can be any non-empty string  
+        temperature=0,  
+        timeout=1200,  
     )
 
     sys_prompt_ie = load_template(r"source\prompts\ie\system\sys_prompt.md")
@@ -137,7 +141,7 @@ def main():
               <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<Step 1: Extract description>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
               
             """
-            user_prompt_temp = load_template(r"source\prompts\ie\user\question_steps\stepv5_1.md")
+            user_prompt_temp = load_template(r"source\prompts\ie\user\question_stepsv6\step1a.md")
                 
             user_prompt = user_prompt_temp.format(
                 chapter_json = chunk_text
@@ -157,83 +161,83 @@ def main():
               <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<Step 1b: List every individual statistical test>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
               
             """
-            user_prompt_temp = load_template(r"source\prompts\ie\user\question_steps\stepv5_1b.md")
+            # user_prompt_temp = load_template(r"source\prompts\ie\user\question_steps\stepv5_1b.md")
                 
-            user_prompt = user_prompt_temp.format(
-                chapter_json = chunk_text
-            )
+            # user_prompt = user_prompt_temp.format(
+            #     chapter_json = chunk_text
+            # )
 
-            print(user_prompt)
+            # print(user_prompt)
 
-            response = forward_pass(sys_prompt_ie, user_prompt, model)
+            # response = forward_pass(sys_prompt_ie, user_prompt, model)
 
-            step1b_content = response.content
+            # step1b_content = response.content
 
-            if step1b_content != "None":
-                print(step1b_content)
-                write_file(output_path, file_path, step1b_content, name_appendix="questions1b.md")
+            # if step1b_content != "None":
+            #     print(step1b_content)
+            #     write_file(output_path, file_path, step1b_content, name_appendix="questions1b.md")
 
 
             """
               <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<Step 2: inferential goal for each analytic block>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
               
             """
-            user_prompt_temp = load_template(r"source\prompts\ie\user\question_steps\stepv5_2.md")
+            # user_prompt_temp = load_template(r"source\prompts\ie\user\question_steps\stepv5_2.md")
 
-            user_prompt = user_prompt_temp.format(
-                step_1a_json = step1_content, step_1b_json = step1b_content
-            )
+            # user_prompt = user_prompt_temp.format(
+            #     step_1a_json = step1_content, step_1b_json = step1b_content
+            # )
 
-            print(user_prompt)
+            # print(user_prompt)
 
-            response = forward_pass(sys_prompt_ie, user_prompt, model)
+            # response = forward_pass(sys_prompt_ie, user_prompt, model)
 
-            step2_content = response.content
+            # step2_content = response.content
 
-            if step2_content != "None":
-                print(step2_content)
-                write_file(output_path, file_path, step2_content, name_appendix="questions2.md")
+            # if step2_content != "None":
+            #     print(step2_content)
+            #     write_file(output_path, file_path, step2_content, name_appendix="questions2.md")
             
 
             """
               <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<Step 3a: Reframe each entry as an explicit research question>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
               
             """
-            user_prompt_temp = load_template(r"source\prompts\ie\user\question_steps\stepv5_3a.md")
+            # user_prompt_temp = load_template(r"source\prompts\ie\user\question_steps\stepv5_3a.md")
 
-            user_prompt = user_prompt_temp.format(
-                step_2_json = step2_content
-            )
+            # user_prompt = user_prompt_temp.format(
+            #     step_2_json = step2_content
+            # )
 
-            print(user_prompt)
+            # print(user_prompt)
 
-            response = forward_pass(sys_prompt_ie, user_prompt, model)
+            # response = forward_pass(sys_prompt_ie, user_prompt, model)
 
-            step3a_content = response.content
+            # step3a_content = response.content
 
-            if step3a_content != "None":
-                print(step3a_content)
-                write_file(output_path, file_path, step3a_content, name_appendix="questions3a.md")
+            # if step3a_content != "None":
+            #     print(step3a_content)
+            #     write_file(output_path, file_path, step3a_content, name_appendix="questions3a.md")
 
             """
               <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<Step 3b: Reframe each entry as an explicit research question>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
               
             """
-            user_prompt_temp = load_template(r"source\prompts\ie\user\question_steps\stepv5_3b.md")
+            # user_prompt_temp = load_template(r"source\prompts\ie\user\question_steps\stepv5_3b.md")
 
-            user_prompt = user_prompt_temp.format(
-                step_3a_json = step3a_content
-            )
+            # user_prompt = user_prompt_temp.format(
+            #     step_3a_json = step3a_content
+            # )
 
-            print(user_prompt)
+            # print(user_prompt)
 
-            response = forward_pass(sys_prompt_ie, user_prompt, model)
+            # response = forward_pass(sys_prompt_ie, user_prompt, model)
 
-            step3b_content = response.content
+            # step3b_content = response.content
 
-            if step3b_content != "None":
-                print(step3b_content)
-                write_file(output_path, file_path, step3b_content, name_appendix="questions3b.md")
+            # if step3b_content != "None":
+            #     print(step3b_content)
+            #     write_file(output_path, file_path, step3b_content, name_appendix="questions3b.md")
 
 
 
